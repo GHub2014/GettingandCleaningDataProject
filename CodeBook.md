@@ -8,17 +8,18 @@ output: html_document
 This codebook describes the variables used and the summaries calculated in the Getting and Cleaning Data Course Project.
 
 #Background Information
-The original source of the data and .txt files (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) was saved to my working directory and unzipped prior to running the R script. The R script begins with reading the files into R.
+The original source of the data and .txt files (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) was saved to my working directory and unzipped prior to running the R script. The R script begins with reading the files into R.<br />
+
 
 Please read the README.md file to find instructions on how to run the script for this project. You will notice that the script is divided into three sections. All of the code cannot be run at once. Instead, each section must be executed separately in order for the packages to work correctly.
 
 #Necessary Packages
-plyr
-reshape
+plyr<br />
+reshape<br />
 reshape2
 
 #Variables
-activity_labels.txt: These were used to describe the activity ids.
+activity_labels.txt: These were used to describe the activity ids.<br />
 1 WALKING
 2 WALKING_UPSTAIRS
 3 WALKING_DOWNSTAIRS
@@ -27,7 +28,7 @@ activity_labels.txt: These were used to describe the activity ids.
 6 LAYING
 
 #Features (measurements)
-features.txt: This was our initial list of measurement variables. From this list, I picked out 66 variables that were appropriate for this project. I chose 66 variables that were associated with means and standard deviations. I placed an asterisk next to the variables I used in my code. In the final data frame, each variable has its own column. I changed the variable names to make them more descriptive. Those names can be found later in this codebook.
+features.txt: This was our initial list of measurement variables. From this list, I picked out 66 variables that were appropriate for this project. I chose 66 variables that were associated with means and standard deviations. I placed an asterisk next to the variables I used in my code. In the final data frame, each variable has its own column. I changed the variable names to make them more descriptive. Those names can be found later in this codebook.<br />
 *1 tBodyAcc-mean()-X
 *2 tBodyAcc-mean()-Y
 *3 tBodyAcc-mean()-Z
@@ -591,7 +592,7 @@ features.txt: This was our initial list of measurement variables. From this list
 561 angle(Z,gravityMean)
 
 #Column names
-In the final data frame, I had 68 columns and 180 observations. Please find the titles of each column/variable below.
+In the final data frame, I had 68 columns and 180 observations. Please find the titles of each column/variable below.<br />
 1: ExperimentVolunteerID
 2: ActivityofVolunteer
 3: TimeBodyAccelerometerMeanX
@@ -663,10 +664,10 @@ In the final data frame, I had 68 columns and 180 observations. Please find the 
 
 #Objects/summaries
 
-testbind = data frame where subject_test.txt, y_test.txt, X_test.txt are joined together
-trainbind = data frame where subject_train.txt, y_train.txt, X_train.txt are joined together
-testandtrain = two subsets joined together
-testandtraindataframe = all variables have been renamed with descriptive names
-averageMelt = the melted data frame where the ExperimentVolunteerID variable and the ActivityofVolunteer variable have been melted with the 66 measurement variables) 
-averageData = the tidy data (wide format)
-averageProjectData.txt = the output file
+testbind = data frame where subject_test.txt, y_test.txt, X_test.txt are joined together<br />
+trainbind = data frame where subject_train.txt, y_train.txt, X_train.txt are joined together<br />
+testandtrain = two subsets joined together<br />
+testandtraindataframe = all variables have been renamed with descriptive names<br />
+averageMelt = the melted data frame where the ExperimentVolunteerID variable and the ActivityofVolunteer variable have been melted with the 66 measurement variables) <br />
+averageData = the tidy data, wide format<br />
+averageProjectData.txt = the output file<br />
