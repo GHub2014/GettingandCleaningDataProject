@@ -2,7 +2,7 @@ GettingandCleaningDataProject
 =============================
 
 This repository is dedicated to the Getting and Cleaning Data Course Project.
-This script will perform the tasks assigned in the Getting and Cleaning Data Course Project
+This script will perform the tasks assigned in the Getting and Cleaning Data Course Project. Please note that there are 3 different sections in this code that should be executed separately to account for the reshape and reshape2 packages. The code in Section 2 utilizes the reshape package. Section 2 utilizes the reshape2, but it can not be called until the third section as it will disrupt a function in the second section.
 
 Set the working directory.
 
