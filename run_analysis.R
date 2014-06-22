@@ -1,4 +1,4 @@
-## This script will perform the tasks assigned in the Getting and Cleaning Data ##Course Project
+## This script will perform the tasks assigned in the Getting and Cleaning Data Course Project
 ## Set the working directory.
  setwd("~/Documents/Coursera/class3project")
 ## Download the appropriate zip file into your computer's working directory and extract files.
